@@ -1,6 +1,6 @@
 # Passport status bot
 
-This bot works checks the status of passport application on info.midpass.ru website.
+This telegram bot checks the status of the passport application on the info.midpass.ru website.
 
 ### Prerequisites:
 Set the following env variables:
