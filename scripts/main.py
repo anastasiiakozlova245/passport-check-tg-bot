@@ -15,13 +15,13 @@ bot_client = telebot.TeleBot(BOT_TOKEN)
 def start(message):
     bot_client.reply_to(
         message,
-        "Welcome to Passport bot! I will help you to check the current status of your passport processing.",
+        "Welcome to Passport bot! I will help you check the current status of your passport processing.",
     )
     send_help_msg(message)
 
 
 @bot_client.message_handler(func=lambda message: message.text == "Check status")
-def button1(message):
+def check_status(message):
     response = req.get(logger)[0]
     logging.info(response)
     bot_client.send_message(
